@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Voces;
+
+}
+
+/* logo_innov invest en attendant */
+.image_logo {
+    width: 100px;
+    margin-right: 420px;
+}
+
+
+/* barre de recherche  */
+.search-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    margin-right: 10px;
+}
+
+.search-header__input {
+    font-family: inherit;
+    font-size: 16px;
+    background-color: rgb(103, 103, 213);
+    border: none 0.5px #525252;
+    color: white;
+    padding: 0.7rem 1rem;
+    border-radius: 25px;
+    width: 210px;
+    height: 48px;
+    transition: all ease-in-out 0.5s;
+    margin-right: -2rem;
+    opacity: 1;
+    text-align: start;
+}
+
+.search-header__input:hover,
+.search-header__input:focus {
+    box-shadow: 0 0 1em #00000013;
+}
+
+.search-header__input:focus {
+    outline: none;
+    background-color: bisque;
+}
+
+.search-header__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #3a3a3a;
+}
+
+.search-header__input:focus+.search-header__button {
+    background-color: transparent;
+}
+
+.search-header__button {
+    border: none;
+    background-color: transparent;
+    margin-top: 0.1em;
+}
+
+.search-header__button:hover {
+    cursor: pointer;
+}
+
+.search-header__icon {
+    height: 1.3em;
+    width: 1.3em;
+    margin-right: 20px;
+    fill: #3a3a3a;
+}
+
+
+
+/* favoris / panier  */
+.login_sign_up {
+    display: flex;
+    gap: 15px;
+    margin-right: 10px;
+}
+
+/* Nos ordinateurs  */
+.animated-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: black;
+    box-shadow: 0 0 0 2px #fff;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #2196F3;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:first-child {
+    position: relative;
+    z-index: 1;
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 5px #ffffff60;
+    color: #ffffff;
+}
+
+.animated-button:active {
+    scale: 0.95;
+}
+
+.animated-button:hover span:last-child {
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Partie respoonsive
+
+@media screen and (max-width: 768px) {
+
+    body {
+        width: 100%;
+    }
+
+    .search-header__icon {
+        display: none;
+    }
+
+    #paragraphe {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        width: 100%;
+
+    }
+
+    .zoom img {
+        width: 20%;
+        flex-direction: column;
+
+    }
+
+
+} */
